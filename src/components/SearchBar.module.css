@@ -1,0 +1,47 @@
+.searchBar {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  color: #83e883;
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 20rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: #83e883;
+  font-weight: 400;
+}
+
+.button {
+  border: solid 2px transparent;
+  border-radius: 9999px;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  background-color: #ffffff31;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .input {
+    width: 14rem;
+  }
+}
