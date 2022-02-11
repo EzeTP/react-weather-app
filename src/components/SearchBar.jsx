@@ -3,7 +3,7 @@ import styles from "./SearchBar.module.css";
 import { GoSearch } from "react-icons/go";
 
 export default function SearchBar({ onSearch }) {
-  const [Search, setSearch] = useState("");
+  const [search, setSearch] = useState("");
   const handleOnSearch = () => {
     onSearch(search);
     setSearch("");
@@ -17,7 +17,7 @@ export default function SearchBar({ onSearch }) {
         type="text"
         placeholder="Search your city..."
         autoComplete="off"
-        value={Search}
+        value={search}
         onChange={(e) => setSearch(e.target.value)}
         onKeyPress={(e) => {
           if (e.key === "Enter") handleOnSearch();
